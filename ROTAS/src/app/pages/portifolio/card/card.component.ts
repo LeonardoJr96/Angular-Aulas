@@ -18,6 +18,10 @@ export class CardComponent implements OnInit {
       res => console.log(res)
     )
 
+    this.activeRoute.firstChild?.params.subscribe(
+      res => console.log(res)
+    )
+
     //http://localhost:4200/portfolio/1?{name=leonardo&token=123}
     this.activeRoute.queryParams.subscribe(
       res => console.log(res)
